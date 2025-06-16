@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-maroia",
+  "version": "1.0.0",
+  "main": "package.json.js",
+  "scripts": {
+    "dev": "vite",
+    "build:css": "sass resources/css:public/css --no-source-map",
+    "watch:css": "sass --watch resources/css:public/css --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "rollup-plugin-copy": "^3.5.0",
+    "sass": "^1.89.2",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "glob": "^11.0.2"
+  }
+}

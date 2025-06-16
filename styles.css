@@ -1,0 +1,1719 @@
+@charset "UTF-8";
+:root {
+  --font-base: "Lora", Georgia, Times New Roman, serif;
+  --font-title: "Playfair Display", Times New Roman, serif;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  color: #428BBC;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3 {
+  font-family: var(--font-title), serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: var(--font-base), serif;
+}
+
+/* HERO SECTION */
+.landing {
+  background-color: #C4E5FC;
+  height: 700px;
+  background-image: url("/wp-content/themes/portfolio-maroia/assets/images/hero-background.svg");
+  background-position: left bottom -30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.landing h1 {
+  line-height: 1;
+}
+@media (max-width: 768px) {
+  .landing {
+    background-size: contain;
+    background-position: center bottom;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 74px;
+  font-weight: 400;
+  margin-top: 164px;
+  color: #428BBC;
+  line-height: 0.8;
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.content {
+  padding: 20px;
+  z-index: 1;
+}
+
+.tree-canvas {
+  position: relative;
+}
+
+.tree-flower {
+  position: absolute;
+  top: 120px;
+  left: -60px;
+  height: 100%;
+  z-index: 2;
+}
+.tree-flower img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .tree-flower {
+    top: 130px;
+    left: -60px;
+    width: 350px;
+  }
+}
+/* Mobile */
+@media (max-width: 600px) {
+  .tree-flower {
+    top: 220px;
+    left: -40px;
+    width: 50%;
+  }
+}
+/* Clouds animation */
+.clouds {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.clouds .cloud {
+  position: absolute;
+  width: 100px;
+}
+.clouds .cloud.cloud-left {
+  top: 62px;
+  left: 283px;
+}
+@media (max-width: 768px) {
+  .clouds .cloud.cloud-left {
+    width: 20%;
+    top: 62px;
+    left: calc(50% - 160px);
+  }
+}
+.clouds .cloud.cloud-right {
+  top: 23px;
+  right: 61px;
+}
+.clouds .cloud.oscillate {
+  animation: oscillate 2s ease-in-out infinite alternate;
+}
+
+@keyframes oscillate {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+:root {
+  --font-base: "Lora", Georgia, Times New Roman, serif;
+  --font-title: "Playfair Display", Times New Roman, serif;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.about-me {
+  padding: 50px;
+  /* decorations corner */
+  /* decorations illustration */
+}
+.about-me .presentation {
+  font-family: var(--font-base), serif;
+  position: relative;
+  padding: 100px 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  color: #428BBC;
+}
+.about-me .presentation h2 {
+  margin-bottom: 40px;
+  font-family: var(--font-title), serif;
+  font-weight: bold;
+}
+.about-me .presentation .text-about p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  margin-right: 30px;
+  max-width: 500px;
+}
+@media (max-width: 900px) {
+  .about-me .presentation {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .about-me .presentation {
+    flex-direction: column-reverse;
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 900px) {
+  .about-me .circle {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.about-me .corner-about {
+  position: absolute;
+  z-index: 0;
+}
+.about-me .corner-about.corner-top-left-about {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.about-me .corner-about.corner-bottom-right-about {
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%) rotate(180deg);
+}
+@media (max-width: 768px) {
+  .about-me .corner-about {
+    width: 300px;
+  }
+}
+.about-me .illustration {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.about-me .circle-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.about-me .circle {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+}
+.about-me .avatar {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+  z-index: 2;
+  filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.25));
+  transition: transform 0.3s ease;
+}
+.about-me .lantern__chinese {
+  position: absolute;
+  width: 130px;
+  top: -50px;
+  right: -10px;
+  z-index: 3;
+  animation: swing 3s ease-in-out infinite;
+  transform-origin: top center;
+}
+@media (max-width: 900px) {
+  .about-me .lantern__chinese {
+    width: 90px;
+    top: -50px;
+    right: -10px;
+  }
+}
+@media (max-width: 600px) {
+  .about-me .lantern__chinese {
+    width: 90px;
+    top: -50px;
+    right: -10px;
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+:root {
+  --font-base: "Lora", Georgia, Times New Roman, serif;
+  --font-title: "Playfair Display", Times New Roman, serif;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.projects-section {
+  min-height: 800px;
+  background: #9e1313;
+}
+.projects-section .hidden {
+  visibility: hidden;
+}
+.projects-section .projects {
+  padding: 100px 120px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.projects-section .projects h2 {
+  font-family: var(--font-title), serif;
+  margin-bottom: 50px;
+}
+@media (max-width: 700px) {
+  .projects-section .projects {
+    padding: 50px 80px;
+  }
+}
+.projects-section .projects .filter-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+.projects-section .projects .filter-buttons button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #1e6b9d;
+  border: 2px solid #1e6b9d;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 140px;
+}
+.projects-section .projects .filter-buttons button:hover, .projects-section .projects .filter-buttons button.active {
+  background-color: #438BBC;
+  color: white;
+  border-color: #438BBC;
+}
+.projects-section .projects .project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
+  gap: 40px;
+}
+.projects-section .projects .project-container .project .floating {
+  animation: float-up-down 4s ease-in-out infinite alternate-reverse both;
+}
+.projects-section .projects .project-container .project .floating .project-card {
+  width: 248px;
+  height: 310px;
+  background-color: #1e6b9d;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
+  text-decoration: none;
+  color: inherit;
+}
+.projects-section .projects .project-container .project .floating .project-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+.projects-section .projects .project-container .project .floating .project-card:hover img {
+  transform: scale(1.05);
+}
+.projects-section .projects .project-container .project .floating .project-card .project-cover figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.projects-section .projects .project-container .project .floating .project-card .project-cover figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+.projects-section .projects .project-container .project .floating .project-card .project-cover figure span {
+  font-family: var(--font-title), serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1e6b9d;
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+.projects-section .projects .btn-projects {
+  display: inline-block;
+  padding: 12px 50px;
+  background-color: #2577a4;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+}
+.projects-section .projects .btn-projects:hover {
+  background-color: #155b82;
+}
+.projects-section .projects .button-wrapper {
+  text-align: center;
+}
+
+@keyframes float-up-down {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+:root {
+  --font-base: "Lora", Georgia, Times New Roman, serif;
+  --font-title: "Playfair Display", Times New Roman, serif;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.history-section {
+  background-image: url("/wp-content/themes/portfolio-maroia/assets/images/mountains-back2.svg");
+  background-position: left bottom -30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 80px;
+}
+.history-section .history {
+  padding: 100px 120px;
+  position: relative;
+}
+.history-section .history img.furin {
+  width: 60px;
+  position: absolute;
+  top: -1px;
+  right: 50px;
+}
+.history-section .history img.furin.furin-top {
+  animation: swing 3s ease-in-out infinite;
+  transform-origin: top center;
+}
+.history-section .history img.furin.furin-bottom {
+  width: 20px;
+  top: 48px;
+  right: 75px;
+  animation: swing 2s ease-in-out infinite;
+  transform-origin: top center;
+  z-index: -1;
+}
+.history-section .history h2 {
+  font-family: var(--font-title), serif;
+  font-weight: bold;
+}
+.history-section .history .timeline {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 100px 0;
+}
+.history-section .history .timeline .experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 150px;
+  position: relative;
+}
+.history-section .history .timeline .experience img {
+  width: 180px;
+}
+.history-section .history .timeline .experience .year {
+  font-family: var(--font-base), serif;
+  margin-bottom: 10px;
+  color: #1e6b9d;
+  font-size: 14px;
+  line-height: 1.4;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.history-section .history .timeline .experience .date {
+  font-family: var(--font-title), serif;
+  font-weight: bold;
+  color: #8b6e28;
+  font-size: 18px;
+}
+.history-section .history .timeline .experience .small {
+  font-size: 14px;
+}
+
+/* MEDIA QUERIES */
+/* Tablet (max-width 992px) */
+@media (max-width: 992px) {
+  .history .timeline {
+    gap: 50px;
+  }
+  .history .timeline .experience {
+    max-width: 130px;
+  }
+  .history .timeline .experience img {
+    width: 170px;
+  }
+}
+/* Mobile (max-width 600px) */
+@media (max-width: 600px) {
+  .history {
+    padding: 70px;
+  }
+  .history .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+  .history .timeline .experience {
+    max-width: none;
+    width: 100%;
+  }
+  .history .timeline .experience img {
+    width: 160px;
+  }
+}
+/* Animation keyframe */
+@keyframes swing {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+.technologies-section {
+  min-height: 800px;
+  background: linear-gradient(#dae7f7, #fff, #97d7f2);
+}
+.technologies-section .technogies {
+  padding: 100px 120px;
+  position: relative;
+}
+.technologies-section .technogies h2 {
+  font-family: var(--font-title), serif;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+.technologies-section .technogies .text-wrapper {
+  font-family: var(--font-base), serif;
+}
+.technologies-section .technogies .tech__title {
+  font-weight: bold;
+}
+.technologies-section .technogies .box-tech {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 40px;
+  padding: 0 20px;
+}
+.technologies-section .technogies .tech {
+  background-color: #aed2eb;
+  padding: 14px;
+  display: flex;
+}
+.technologies-section .technogies .tech .icon {
+  background-color: #438bbc;
+  padding: 8px;
+  margin-right: 12px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.technologies-section .technogies .clouds2-right {
+  position: absolute;
+  top: 100px;
+  right: 30px;
+}
+.technologies-section .technogies .clouds2-left {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+}
+.technologies-section .technogies .clouds2 {
+  animation: oscillate 2s ease-in-out infinite alternate;
+}
+@media (max-width: 780px) {
+  .technologies-section .technogies {
+    padding: 50px;
+  }
+  .technologies-section .technogies .box-tech {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+    padding: 0 10px;
+  }
+  .technologies-section .technogies .tech {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 480px) {
+  .technologies-section .technogies .technogies {
+    padding: 100px 50px;
+  }
+  .technologies-section .technogies .box-tech {
+    grid-template-columns: 1fr;
+    padding: 50px;
+  }
+}
+
+:root {
+  --font-base: "Lora", Georgia, Times New Roman, serif;
+  --font-title: "Playfair Display", Times New Roman, serif;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.contact-me {
+  background-image: url("/wp-content/themes/portfolio-maroia/assets/images/rock3.svg"), linear-gradient(#97d7f2, white, #428bbc);
+  background-repeat: no-repeat;
+  background-position: center bottom, center center;
+  background-size: contain;
+  padding: 20px 120px 100px;
+}
+.contact-me h2 {
+  font-family: var(--font-title), serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contact-me .contact__paragraphe {
+  font-family: var(--font-base), serif;
+}
+.contact-me .contact-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+}
+.contact-me .contact-main .cloudsContact .clouds-contact {
+  animation: oscillate 2s ease-in-out infinite alternate;
+}
+.contact-me .contact-main .form-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-me .contact-main .form-section .form-container {
+  width: 100%;
+  max-width: 500px;
+}
+.contact-me .contact-main .form-section .form-container .form {
+  background-color: #428bbc;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  color: white;
+}
+.contact-me .contact-main .form-section .form-container .form h2 {
+  font-family: var(--font-title), serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contact-me .contact-main .form-section .form-container .form .form-input-wrapper {
+  margin-bottom: 15px;
+}
+.contact-me .contact-main .form-section .form-container .form .form-input-wrapper label {
+  font-family: var(--font-base), serif;
+}
+.contact-me .contact-main .form-section .form-container .form .form-input-wrapper input,
+.contact-me .contact-main .form-section .form-container .form .form-input-wrapper textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.contact-me .contact-main .form-section .form-container .form .btn-form {
+  font-family: var(--font-base), serif;
+  background-color: white;
+  padding: 10px 40px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  color: #428bbc;
+  cursor: pointer;
+  display: block;
+}
+.contact-me .contact-main .form-section .form-container .form .btn-form:hover {
+  background-color: #053957;
+  color: white;
+}
+.contact-me .text-wrapper {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.contact-me .text-wrapper h2 {
+  margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .contact-me {
+    padding: 100px 40px;
+  }
+  .contact-me .contact-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-me .contact-main .form-container {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .contact-me .contact-main .cloudsContact .clouds-contact {
+    position: absolute;
+    top: -178px;
+    right: -2px;
+  }
+  .contact-me .text-wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+@keyframes oscillate {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+:root {
+  --font-base: "Lora", Georgia, Times New Roman, serif;
+  --font-title: "Playfair Display", Times New Roman, serif;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+header {
+  background: #C4E5FC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  position: relative;
+  font-family: var(--font-base), serif;
+  font-size: 1.1rem;
+}
+@media (max-width: 700px) {
+  header {
+    padding: 30px 40px;
+  }
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  height: 80px;
+  cursor: pointer;
+}
+
+.container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* spazio tra menu e language switcher */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+.menu a {
+  text-decoration: none;
+  color: #1572B6;
+}
+.menu a:hover {
+  color: #0c5172;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transition: transform 0.3s ease;
+}
+.nav-link:hover::after, .nav-link:focus::after, .nav-link:active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.language-switcher {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  font-family: inherit;
+  margin-left: 50px;
+}
+
+.current-lang-btn,
+.lang-dropdown li a {
+  font-family: var(--font-base), serif;
+  display: block;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: left;
+  padding: 8px 12px;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.current-lang-btn {
+  cursor: pointer;
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 9999;
+}
+
+.lang-dropdown li {
+  width: 100%;
+}
+
+/* Show dropdown on hover */
+.language-switcher:hover .lang-dropdown {
+  display: block;
+}
+
+.language-switcher .current-lang-btn,
+.language-switcher .lang-dropdown li a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+.language-switcher .current-lang-btn::after,
+.language-switcher .lang-dropdown li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transition: transform 0.3s ease;
+}
+.language-switcher .current-lang-btn:hover::after, .language-switcher .current-lang-btn:focus::after, .language-switcher .current-lang-btn:active::after,
+.language-switcher .lang-dropdown li a:hover::after,
+.language-switcher .lang-dropdown li a:focus::after,
+.language-switcher .lang-dropdown li a:active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Nascondi checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Burger icon */
+.navbar__toggle {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 3000;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navbar__toggle .bar {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #1572B6;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Animazione X */
+.menu-toggle:checked + .navbar__toggle .bar1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle:checked + .navbar__toggle .bar2 {
+  opacity: 0;
+}
+
+.menu-toggle:checked + .navbar__toggle .bar3 {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Offcanvas menu */
+.offcanvas-menu {
+  pointer-events: none;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100vh;
+  background-color: #C4E5FC;
+  padding: 3rem 1.5rem;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  transition: right 0.4s ease;
+  z-index: 2000;
+  overflow-y: auto;
+}
+
+.menu-toggle:checked ~ .offcanvas-menu {
+  right: 0;
+}
+
+/* Sposta contenuto pagina */
+.page-content {
+  transition: transform 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.menu-toggle:checked ~ .offcanvas-menu {
+  right: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Menu principale desktop */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: #1572B6;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #0c5172;
+}
+
+/* Offcanvas menu lista */
+.offcanvas-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.offcanvas-menu-list li {
+  margin: 1rem 0;
+}
+
+.offcanvas-menu-list a {
+  font-size: 1.2rem;
+  color: #1572B6;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.offcanvas-menu-list a:hover {
+  color: #0c5172;
+}
+
+/* Lingue offcanvas */
+.offcanvas-language-switcher ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.offcanvas-language-switcher li {
+  margin: 0.5rem 0;
+}
+
+.offcanvas-language-switcher a {
+  color: #1572B6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.offcanvas-language-switcher a:hover {
+  color: #0c5172;
+}
+
+/* Burger menu visibile fino a 1050px */
+@media (max-width: 1050px) {
+  .navbar__toggle {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  /* Nascondi la lingua nella barra principale quando c'è il burger */
+  .language-switcher {
+    display: none;
+  }
+}
+@media (min-width: 1051px) {
+  .offcanvas-menu {
+    display: none;
+  }
+  /* Mostra la lingua normale desktop sopra 1050px */
+  .language-switcher {
+    display: block;
+  }
+}
+:root {
+  --font-base: "Lora", Georgia, Times New Roman, serif;
+  --font-title: "Playfair Display", Times New Roman, serif;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+footer {
+  background-color: #428BBC;
+  padding: 60px 40px;
+  color: #333;
+}
+footer nav.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+footer nav.footer-nav .footer-column {
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+footer nav.footer-nav .footer-column h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #C4E5FC;
+}
+footer nav.footer-nav .footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer nav.footer-nav .footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+footer nav.footer-nav .footer-column ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+footer nav.footer-nav .footer-column ul li a:hover {
+  color: #C4E5FC;
+  text-decoration: underline;
+}
+footer .footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #C4E5FC;
+  padding-top: 20px;
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 20px;
+  }
+  footer nav.footer-nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer nav.footer-nav .footer-column {
+    max-width: 100%;
+  }
+}
+
+:root {
+  --font-base: "Lora", Georgia, Times New Roman, serif;
+  --font-title: "Playfair Display", Times New Roman, serif;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.error-404-container {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url("/wp-content/themes/portfolio-maroia/assets/images/mountains-back2.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.error-404-container h1 {
+  font-family: var(--font-title), serif;
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+.error-404-container p {
+  font-family: var(--font-base), serif;
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+.error-404-container .home-button {
+  background: #1e6b9d;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.error-404-container .home-button:hover {
+  background: #333;
+}
+
+@media (max-width: 600px) {
+  .error-404-container {
+    padding: 80px 10px;
+  }
+  .error-404-container h1 {
+    font-size: 3em;
+  }
+  .error-404-container p {
+    font-size: 1rem;
+  }
+}
+:root {
+  --font-base: "Lora", Georgia, Times New Roman, serif;
+  --font-title: "Playfair Display", Times New Roman, serif;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/wp-content/themes/portfolio-maroia/resources/fonts/Lora-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.single-project .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.single-project {
+  padding: 6.25rem 7.5rem;
+  background-color: #C4E5FC;
+  display: flex;
+  flex-direction: column;
+}
+.single-project h1 {
+  margin-bottom: 40px;
+}
+.single-project .project_presentation {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 40px;
+}
+.single-project .image_cover {
+  background-color: #1e6b9d;
+  width: 200px;
+  height: 280px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.single-project figure {
+  margin: 0;
+}
+.single-project figure img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  display: block;
+}
+.single-project .content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.single-project .bloc_technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+.single-project .bloc_technologies .tech-badge {
+  flex: 0 0 auto;
+}
+.single-project a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #fff;
+  background-color: #0073aa;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.single-project a:hover {
+  background-color: #005f8d;
+}
+.single-project .tech_title {
+  margin-bottom: 20px;
+}
+.single-project .tech-badge {
+  background-color: #1e6b9d;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.single-project .text_projet a {
+  margin-bottom: 50px;
+  background: none;
+  color: #0c5172;
+  text-decoration: underline;
+}
+.single-project .text_projet a:hover {
+  color: #9c64bb;
+  background: none;
+}
+.single-project .explaination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.single-project .explaination .cardproject {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 30px;
+  flex: 1 1 300px;
+}
+.single-project .explaination .cardproject h3 {
+  font-family: var(--font-title), serif;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .single-project {
+    padding: 2rem 1rem;
+  }
+  .single-project .project_presentation {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .single-project .project_presentation .image_cover figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .single-project .project_presentation .text_projet {
+    width: 100%;
+  }
+  .single-project .project_presentation .text_projet a {
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    font-size: 1rem;
+  }
+  .single-project .project_presentation .text_projet p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .single-project .project_presentation .text_projet .bloc_technologies {
+    justify-content: center;
+  }
+  .single-project .explaination {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .single-project .explaination .cardproject {
+    padding: 2rem 1rem;
+  }
+}
+.project-gallery {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.project-gallery h2 {
+  grid-column: 1/-1;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+.project-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-gallery figure:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.project-gallery figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
